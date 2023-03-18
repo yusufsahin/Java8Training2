@@ -1,3 +1,8 @@
+import com.example.Director;
+import com.example.Employee;
+import com.example.Engineer;
+import com.example.Manager;
+
 public class Main {
     public static void main(String[] args) {
          /*
@@ -82,7 +87,7 @@ public class Main {
        m4.raiseSalary(5500);
 
        */
-
+/*
         String name="Jane";
 
         int a=5;
@@ -94,6 +99,28 @@ public class Main {
         System.out.println(a);
         System.out.println(b);
         System.out.println(x);;
+*/
+
+        Employee employee = new Employee(110,"Jane Doe","2222222555",25000);
+
+        Manager  manager= new Manager(120,"Angel Doe","66666666",50000,"SW");
+
+        Director director= new Director(130,"Frank Doe","9999999",75000,"SW",1000000);
+
+        Employee employee1 = director;
+
+        System.out.println(employee1.getEmpId()+"-"+employee1.getName()+"-"+employee1.getSsn()+"-"+employee1.getSalary());
+
+        Director director1= (Director) employee1;
+        System.out.println("Director1---");
+        System.out.println(director1.getEmpId()+"-"+director1.getName()+"-"+director1.getSsn()+"-"+director1.getSalary()+"-"+director1.getDeptName()+"-"+director1.getBudget());
+
+        Engineer engineer= new Engineer(140,"Sue Doe","7777777775",40000,"SW");
+
+        Employee employee2= engineer;
+
+       // Manager manager1=(Employee)engineer;
+
 
     }
 }
