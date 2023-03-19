@@ -31,7 +31,7 @@ public class CrushedRock implements SalesCalc {
 
     @Override
     public double calcSalesPrice() {
-        return this.salesPrice *  this.weight * 0.5;
+        return this.salesPrice *  this.weight * 1.5;
     }
 
     @Override

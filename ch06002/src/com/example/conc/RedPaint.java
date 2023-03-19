@@ -30,7 +30,7 @@ public class RedPaint implements SalesCalc {
 
     @Override
     public double calcSalesPrice() {
-        return this.salesPrice * this.gallons* 0.3 ;
+        return this.salesPrice * this.gallons* 1.3 ;
     }
 
     @Override

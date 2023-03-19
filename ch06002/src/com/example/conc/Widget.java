@@ -30,7 +30,7 @@ public class Widget implements SalesCalc {
 
     @Override
     public double calcSalesPrice() {
-        return this.cost*this.quantity*0.2;
+        return this.cost*this.quantity*1.2;
     }
 
     @Override

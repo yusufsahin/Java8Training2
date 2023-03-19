@@ -16,6 +16,6 @@ public class ConcTotalCostBenefit implements TotalCostBenefit {
 
         }
 
-        System.out.println("Total Sales: "+totalSales+"-"+"Total cost: "+ totalCost+"-"+"Total Profit"+totalProfit);
+        System.out.println("Total Sales: "+totalSales+" - "+"Total cost: "+ totalCost+" - "+"Total Profit: "+totalProfit);
     }
 }

@@ -20,10 +20,10 @@ public class Main {
         itemList[5]= new WidgetPro("WP 001",50,25,35,"Type1");
 
 
-        ItemReport itemReport= new ItemReport();
+    //    ItemReport itemReport= new ItemReport();
         System.out.println("---Sales Report");
         for (SalesCalc item:itemList) {
-            itemReport.printItemData(item);
+            ItemReport.printItemData(item);
         }
 
         ConcTotalCostBenefit concTotalCostBenefit= new ConcTotalCostBenefit();
